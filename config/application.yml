@@ -1,0 +1,29 @@
+spring:
+  profiles:
+    active: test
+server:
+  port: 9022
+  undertow:
+    worker-threads: 150
+
+logging:
+  file: ./log/goodservice.log
+  config: config/logback.xml
+
+---
+spring:
+  profiles: prod
+  instance:
+    metadataMap:
+      zone: zone1
+
+---
+spring:
+  profiles: test
+  instance:
+    metadataMap:
+      zone: zone1
+
+
+
+

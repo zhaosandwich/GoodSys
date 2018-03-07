@@ -1,0 +1,6 @@
+<configuration>
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+    <jmxConfigurator/>
+
+    <logger name="org.springframework.web.servlet.resource.ResourceHttpRequestHandler" level="ERROR" additivity="false" />
+</configuration>
